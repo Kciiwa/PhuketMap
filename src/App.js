@@ -21,7 +21,7 @@ function App() {
   const [villas, setVillas] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/villas")
+    fetch("https://map-server-orcin.vercel.app/api/villas")
       .then((response) => response.json())
       .then((data) => {
         setVillas(() => data);
